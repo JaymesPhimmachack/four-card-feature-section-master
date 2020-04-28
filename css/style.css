@@ -1,0 +1,123 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-very-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: var(--color-grayish-blue);
+  background-color: var(--color-very-light-gray);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-row-gap: 60px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 50px;
+  padding: 0 6%;
+}
+
+.header {
+  padding: 2.3rem;
+  text-align: center;
+  margin: 60px auto 0;
+}
+.header__title {
+  font-size: 2.5rem;
+  max-width: 400px;
+  line-height: 1.25;
+  color: var(--color-very-dark-blue);
+}
+.header__main-title {
+  font-weight: 200;
+}
+.header__main-title, .header__sub-title {
+  display: block;
+}
+.header__text {
+  margin-top: 2rem;
+  max-width: 400px;
+}
+
+.main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 400px));
+  align-items: center;
+  justify-content: center;
+}
+
+.group {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.card {
+  padding: 2.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 12px 2px var(--color-grayish-blue);
+}
+.card--border-color-1 {
+  border-top: 5px solid var(--color-cyan);
+}
+.card--border-color-2 {
+  border-top: 5px solid var(--color-red);
+}
+.card--border-color-3 {
+  border-top: 5px solid var(--color-orange);
+}
+.card--border-color-4 {
+  border-top: 5px solid var(--color-blue);
+}
+.card__title {
+  line-height: 1.25;
+  color: var(--color-very-dark-blue);
+}
+.card__text {
+  margin: 2rem 0;
+  width: 30rem;
+}
+.card__image {
+  align-self: end;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 190px);
+  grid-column-gap: 3px;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+}
+.attribution__link {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
